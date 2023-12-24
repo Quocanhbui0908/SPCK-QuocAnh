@@ -1,4 +1,4 @@
-const apiUrl = 'https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=larry_bird';
+const apiUrl = 'https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=tim_duncan';
 
 const options = {
     method: 'GET',
