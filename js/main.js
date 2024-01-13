@@ -1,6 +1,6 @@
 
 searchPlayer.addEventListener("change", function (e) {
-    fetch(`https://thesportsdb.com/api/v1/json/3/searchplayers.php?p=${e.target.value}`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://thesportsdb.com/api/v1/json/3/searchplayers.php?p=${e.target.value}`)
         .then(response => response.json())
         .then(data => {
             // Extract data from the JSON
@@ -24,7 +24,4 @@ searchPlayer.addEventListener("change", function (e) {
         })
         .catch(error => console.error('Error fetching player data:', error));
 });
-
-import { Input, Ripple, initMDB } from "mdb-ui-kit";
-initMDB({ Input, Ripple });
 
