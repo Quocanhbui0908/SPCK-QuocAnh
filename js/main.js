@@ -1,4 +1,17 @@
+document.getElementById('player-name').innerText = '--';
+document.getElementById('player-number').innerText = '--';
+document.getElementById('player-position').innerText = '--';
+document.getElementById('player-nationality').innerText = '--';
+document.getElementById('player-team').innerText = '--';
+document.getElementById('player-image').src = 'https://www.thesportsdb.com/images/media/player/cutout/rqrmb61602281225.png';
 
+// Default player features
+document.getElementById('player-gender').innerText = '--';
+document.getElementById('player-height').innerText = '--';
+document.getElementById('player-weight').innerText = '--';
+document.getElementById('player-status').innerText = '--';
+document.getElementById('player-born').innerText = '--';
+document.getElementById('player-shoes').innerText = '--';
 searchPlayer.addEventListener("change", function (e) {
     fetch(`https://cors-anywhere.herokuapp.com/https://thesportsdb.com/api/v1/json/3/searchplayers.php?p=${e.target.value}`)
         .then(response => response.json())
